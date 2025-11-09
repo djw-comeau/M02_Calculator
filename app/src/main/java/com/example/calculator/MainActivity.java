@@ -111,6 +111,16 @@ public class MainActivity extends AppCompatActivity {
 
  */
 
+/*
+Revision 2.0
+Assignment: A9 - ASOP
+Course: Mobile Application Development
+Instructor: Russell Shanahan
+Date: November 9, 2025
+Student: David Comeau
+Student ID: W0158668
+ */
+
 package com.example.calculator;
 
 import androidx.appcompat.app.AppCompatActivity;
