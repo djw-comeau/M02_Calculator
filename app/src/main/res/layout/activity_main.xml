@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/portal_black"
+    tools:context=".MainActivity">
+
+    <!-- Input 1 -->
+    <EditText
+        android:id="@+id/editTextN1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Number 1"
+        android:inputType="numberDecimal"
+        android:fontFamily="@font/roboto_mono"
+        android:textColor="@color/portal_white"
+        android:textColorHint="@android:color/white"
+        android:backgroundTint="@color/portal_cyan"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editTextN2"
+        app:layout_constraintHorizontal_weight="1"
+        android:layout_margin="16dp"/>
+
+    <!-- Input 2 -->
+    <EditText
+        android:id="@+id/editTextN2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Number 2"
+        android:inputType="numberDecimal"
+        android:fontFamily="@font/roboto_mono"
+        android:textColor="@color/portal_white"
+        android:textColorHint="@android:color/white"
+        android:backgroundTint="@color/portal_orange"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/editTextN1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        android:layout_margin="16dp"/>
+
+    <!-- Answer -->
+    <TextView
+        android:id="@+id/editTextNumAns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Answer"
+        android:textSize="20sp"
+        android:fontFamily="@font/roboto_mono"
+        android:textColor="@color/portal_orange"
+        android:background="@color/portal_black"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@id/editTextN1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"/>
+
+    <!-- Add -->
+    <Button
+        android:id="@+id/b_Add"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Combine test subjects into one inevitable failure"
+        android:background="@drawable/portal_button"
+        android:textColor="@color/portal_cyan"
+        android:textAllCaps="false"
+        android:fontFamily="@font/roboto_mono"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/editTextNumAns"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
+    <!-- Subtract -->
+    <Button
+        android:id="@+id/b_Subtract"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Remove excess mass. Mostly your dignity."
+        android:background="@drawable/portal_button"
+        android:textColor="@color/portal_cyan"
+        android:textAllCaps="false"
+        android:fontFamily="@font/roboto_mono"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/b_Add"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
+    <!-- Multiply -->
+    <Button
+        android:id="@+id/b_Multiply"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Exponential disappointment generator"
+        android:background="@drawable/portal_button"
+        android:textColor="@color/portal_cyan"
+        android:textAllCaps="false"
+        android:fontFamily="@font/roboto_mono"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/b_Subtract"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
+    <!-- Divide -->
+    <Button
+        android:id="@+id/b_Divide"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Divide… like your chances of survival. By zero."
+        android:background="@drawable/portal_button"
+        android:textColor="@color/portal_cyan"
+        android:textAllCaps="false"
+        android:fontFamily="@font/roboto_mono"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/b_Multiply"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

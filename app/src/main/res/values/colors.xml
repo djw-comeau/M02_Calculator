@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="portal_white">#FFFFFF</color>
+    <color name="portal_black">#1A1A1A</color>
+    <color name="portal_cyan">#00E6E6</color>
+    <color name="portal_orange">#FF8000</color>
+    <color name="portal_grey">#2C2C2C</color>
+</resources>
