@@ -274,6 +274,8 @@ public class MainActivity extends AppCompatActivity {
  Release Readiness Comments – Portal Calculator
 ------------------------------------------------------------
 
+https://play.google.com/console/about/guides/releasewithconfidence/
+
 1. SIGN AND OPTIMIZE YOUR RELEASE BUILD
 Before uploading to Google Play, I would create a signed release build.
 That means generating a private keystore, configuring signingConfigs in Gradle,
