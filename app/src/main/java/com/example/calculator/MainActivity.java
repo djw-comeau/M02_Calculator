@@ -268,3 +268,35 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG, "Final result displayed: " + answer + ". It won’t help you survive.");
     }
 }
+
+/*
+------------------------------------------------------------
+ Release Readiness Comments – Portal Calculator
+------------------------------------------------------------
+
+1. SIGN AND OPTIMIZE YOUR RELEASE BUILD
+Before uploading to Google Play, I would create a signed release build.
+That means generating a private keystore, configuring signingConfigs in Gradle,
+and removing debug logs (Log.d) from this class. I would also run Lint
+and code inspections to make sure the app is optimized and secure.
+
+2. TEST ON MULTIPLE DEVICES AND CONFIGURATIONS
+I would test this app on various Android versions (10–14) and screen sizes
+to confirm that the UI scales correctly and that edge cases (e.g., divide by zero)
+are handled gracefully. I would test both emulator and real devices to verify
+consistent behavior and performance.
+
+3. PREPARE THE STORE LISTING AND POLICY CONTENT
+Before publishing, I would complete the Play Store listing with a proper
+app description, screenshots, and a 512x512 icon. I would also write a simple
+privacy policy explaining that no data is collected and declare the app’s
+target audience as “general use / all ages.”
+
+4. VERIFY COMPLIANCE WITH PLAY STORE POLICIES
+I would review the Google Play Developer Policy Center to ensure this app
+meets all guidelines, including content and data safety. Since this calculator
+uses no network or personal information, compliance is straightforward.
+I would still complete the Data Safety and Permissions forms before release.
+
+------------------------------------------------------------
+*/
